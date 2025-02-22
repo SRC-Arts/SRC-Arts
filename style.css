@@ -81,6 +81,15 @@ nav a {
     margin: 10px 0;
 }
 
+.service-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 .contact-page form {
     display: flex;
     flex-direction: column;
