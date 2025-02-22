@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRC-Arts.com</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #1a0033;
+            background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px);
+            background-size: 100px 100px;
+            background-position: 0 0, 50px 50px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a0dad, #8a2be2);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        nav {
+            background: #6a0dad;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            height: 270px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .buy-button {
+            background: #8a2be2;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .info-page,
+        .services-page,
+        .contact-page {
+            display: none;
+            padding: 50px;
+            font-size: 20px;
+            font-family: 'Raleway', sans-serif;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .services-page img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .contact-page form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-page input,
+        .contact-page textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-page button {
+            background: #8a2be2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showInfo() {
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('.info-page').style.display = 'block';
+            document.querySelector('.services-page').style.display = 'none';
+            document.querySelector('.contact-page').style.display = 'none';
+        }
+
+        function showHome() {
+            document.querySelector('.info-page').style.display = 'none';
+            document.querySelector('.services-page').style.display = 'none';
+            document.querySelector('.contact-page').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
+        }
+
+        function showService() {
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('.info-page').style.display = 'none';
+            document.querySelector('.services-page').style.display = 'block';
+            document.querySelector('.contact-page').style.display = 'none';
+        }
+
+        function showContact() {
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('.info-page').style.display = 'none';
+            document.querySelector('.services-page').style.display = 'none';
+            document.querySelector('.contact-page').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        SRC-Arts.com
+    </header>
+    <nav>
+        <a onclick="showHome()">Home</a>
+        <a onclick="showInfo()">About</a>
+        <a onclick="showService()">Services</a>
+        <a onclick="showContact()">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="product">
+            <img src="produto1.jpg" alt="Product 1">
+            <h3>Product Name</h3>
+            <p>Short product description.</p>
+            <a href="#" class="buy-button">Buy with Pix</a>
+            <a href="#" class="buy-button">Buy with PayPal</a>
+        </div>
+    </div>
+
+    <div class="info-page">
+        <p>Hello there, I'm Kebi, an amateur artist and animator. I began my journey in art a few years back and always felt like sharing it and the love for fanart, that's why this website exists.</p>
+        <p>Here you can get art of your favorite character commissioned directly on a product of your liking, making it authentic and practical!</p>
+        <p>Feel free to take a look around.</p>
+    </div>
+
+    <div class="services-page">
+        <h2>Services</h2>
+        <p>Get custom artwork of your favorite characters printed directly on products of your choice. High-quality, unique, and made with love!</p>
+        <img src="example1.jpg" alt="Example Artwork 1">
+        <img src="example2.jpg" alt="Example Artwork 2">
+        <p>Support me on <a href="https://ko-fi.com/somerandomcrazie" target="_blank">Ko-fi</a> for exclusive commissions and more!</p>
+    </div>
+
+    <div class="contact-page">
+        <h2>Contact Me</h2>
+
+        <p>You can also reach me directly at: <a href="mailto:gabiitheweirdo@gmail.com">gabiitheweirdo@gmail.com</a></p>
+        
+        <p>                                                                            </p>
+        
+        <div class="social-buttons">
+    <a href="https://www.deviantart.com/somerandomcrazie" target="_blank">
+        <button class="social-button">
+            <img src="deviantart_logo.png" alt="DeviantArt">
+        </button>
+    </a>
+    
+    <a href="https://www.instagram.com/somerandomcrazie" target="_blank">
+        <button class="social-button"> 
+            <img src="insta_logo.png" alt="Instagram">
+        </button>
+    </a>
+    <p>                                                                                </p>
+    
+       <a href="https://www.threads.net/@some_random_crazie?xmt=AQGzBEPdxVLFt3Q2alfodVE7OIaYlW-_9VrY5neJ5VtOL78" target="_blank">
+        <button class="social-button"> 
+            <img src="threads" alt="Threads">
+        </button>
+    </a>
+    
+       <a href="https://www.youtube.com/@SomeRandomCrazie" target="_blank">
+        <button class="social-button"> 
+            <img src="youtube" alt="Youtube">
+        </button>
+    </a>
+</div>
+
+</div></body>
