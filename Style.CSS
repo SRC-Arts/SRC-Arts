@@ -57,6 +57,54 @@ nav a {
     padding: 20px;
 }
 
+#about {
+    display: block;
+}
+
+:target {
+    display: block;
+}
+
+:target ~ .page {
+    display: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+#services {
+    display: block;
+}
+
+:target {
+    display: block;
+}
+
+:target ~ .page {
+    display: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+#contact {
+    display: block;
+}
+
+:target {
+    display: block;
+}
+
+:target ~ .page {
+    display: none;
+}
+
+.container {
+    padding: 20px;
+}
+
 .product {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
