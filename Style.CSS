@@ -52,12 +52,8 @@ nav a:hover {
     display: block;
 }
 
-:target ~ .page {
+:target:not(#home) ~ #home {
     display: none;
-}
-
-#home {
-    display: block;
 }
 
 .container {
