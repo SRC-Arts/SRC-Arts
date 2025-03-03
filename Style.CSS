@@ -53,7 +53,7 @@ nav a:hover {
 }
 
 #home {
-    display: block;
+    display: none;
 }
 
 :target:not(#home) ~ #home {
