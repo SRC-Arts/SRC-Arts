@@ -37,19 +37,16 @@ nav a {
 
 .page {
     display: none;
-    padding: 20px;
+    padding: 50px;
     min-height: 100vh;
-}
-
-#home {
-    display: block;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 :target {
     display: block;
 }
 
-.page:not(:target) {
+:target:not(#home) ~ #home {
     display: none;
 }
 
