@@ -31,28 +31,25 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-}
-
-nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
 }
 
 .page {
     display: none;
-    padding: 50px;
+    padding: 20px;
     min-height: 100vh;
-    animation: fadeIn 0.5s ease-in-out;
+}
+
+#home {
+    display: block;
 }
 
 :target {
     display: block;
 }
 
-:target:not(#home) ~ #home {
+.page:not(:target) {
     display: none;
 }
 
@@ -62,18 +59,17 @@ nav a:hover {
 
 .product {
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin: 15px;
+    padding: 15px;
+    margin: 10px;
     display: inline-block;
-    width: 260px;
+    width: 250px;
+    height: 270px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
-    text-align: center;
 }
 
 .product img {
-    width: 100%;
-    max-width: 200px;
+    width: 50%;
     border-radius: 5px;
 }
 
@@ -85,18 +81,15 @@ nav a:hover {
     display: inline-block;
     margin-top: 10px;
     border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
+    font-family: 'Raleway', sans-serif;
 }
 
-.buy-button:hover {
-    background: #6a0dad;
-}
-
-.page {
+.home-page, .info-page, .services-page, .contact-page {
+    display: none;
     padding: 50px;
     font-size: 20px;
-    max-width: 800px;
+    font-family: 'Raleway', sans-serif;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -111,11 +104,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
-.contact-page input, 
-.contact-page textarea {
+.contact-page input, .contact-page textarea {
+    margin: 10px;
     padding: 10px;
     width: 80%;
     max-width: 400px;
@@ -130,21 +122,18 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
 }
 
-.contact-page button:hover {
-    background: #6a0dad;
+a {
+    color: #E4C8F6;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #D4B0E6;
+    text-decoration: underline;
+}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.contact-page a {
+    color: #E4C8F6;
 }
