@@ -31,8 +31,14 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .page {
@@ -56,17 +62,18 @@ nav a {
 
 .product {
     background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    margin: 10px;
+    padding: 20px;
+    margin: 15px;
     display: inline-block;
-    width: 250px;
-    height: 270px;
+    width: 260px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
+    text-align: center;
 }
 
 .product img {
-    width: 50%;
+    width: 100%;
+    max-width: 200px;
     border-radius: 5px;
 }
 
@@ -78,15 +85,18 @@ nav a {
     display: inline-block;
     margin-top: 10px;
     border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
 }
 
-.home-page, .info-page, .services-page, .contact-page {
-    display: none;
+.buy-button:hover {
+    background: #6a0dad;
+}
+
+.page {
     padding: 50px;
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -101,10 +111,11 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
-.contact-page input, .contact-page textarea {
-    margin: 10px;
+.contact-page input, 
+.contact-page textarea {
     padding: 10px;
     width: 80%;
     max-width: 400px;
@@ -119,6 +130,22 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-page button:hover {
+    background: #6a0dad;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 a {
