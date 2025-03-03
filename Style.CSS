@@ -79,6 +79,10 @@ nav a {
     display: block;
 }
 
+.info-page, .services-page, .contact-page {
+    display: none;
+}
+
 .services-page img {
     width: 100%;
     max-width: 400px;
