@@ -1,4 +1,5 @@
 function showHome() {
+    console.log("Switching to Home");
     document.querySelector('.home-page').style.display = 'block';
     document.querySelector('.info-page').style.display = 'none';
     document.querySelector('.services-page').style.display = 'none';
@@ -6,6 +7,7 @@ function showHome() {
 }
 
 function showInfo() {
+    console.log("Switching to About");
     document.querySelector('.home-page').style.display = 'none';
     document.querySelector('.info-page').style.display = 'block';
     document.querySelector('.services-page').style.display = 'none';
@@ -13,6 +15,7 @@ function showInfo() {
 }
 
 function showService() {
+    console.log("Switching to Services");
     document.querySelector('.home-page').style.display = 'none';
     document.querySelector('.info-page').style.display = 'none';
     document.querySelector('.services-page').style.display = 'block';
@@ -20,6 +23,7 @@ function showService() {
 }
 
 function showContact() {
+    console.log("Switching to Contact");
     document.querySelector('.home-page').style.display = 'none';
     document.querySelector('.info-page').style.display = 'none';
     document.querySelector('.services-page').style.display = 'none';
