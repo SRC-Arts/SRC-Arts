@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1a0033; 
+    background-image: url('https://raw.githubusercontent.com/SRC-Arts/SRC-Arts/main/Background%20website.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #6a0dad, #8a2be2);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav {
+    background: #6a0dad;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.page {
+    display: none;
+    padding: 50px;
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+:target {
+    display: block;
+}
+
+:target ~ .page {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+.container {
+    padding: 20px;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background: #8a2be2;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+    background: #6a0dad;
+}
+
+.page {
+    padding: 50px;
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.services-page img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-page input, 
+.contact-page textarea {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-page button {
+    background: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-page button:hover {
+    background: #6a0dad;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
