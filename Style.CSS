@@ -35,6 +35,24 @@ nav a {
     cursor: pointer;
 }
 
+.page {
+    display: none;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+#home {
+    display: block;
+}
+
+:target {
+    display: block;
+}
+
+:target ~ .page {
+    display: none;
+}
+
 .container {
     padding: 20px;
 }
