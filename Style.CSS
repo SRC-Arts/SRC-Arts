@@ -105,8 +105,8 @@ nav a:hover {
 }
 
 .services-page img {
-    width: 100%;
-    max-width: 400px;
+    width: 70%;
+    max-width: 280px;
     border-radius: 10px;
     margin: 10px 0;
 }
