@@ -58,13 +58,7 @@ nav a:hover {
 
 .container {
     padding: 20px;
-}
 
-.product-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os produtos quebrem linha conforme o espaço */
-    justify-content: center; /* Centraliza os produtos */
-    gap: 20px; /* Espaçamento entre os produtos */
 }
 
 .product {
