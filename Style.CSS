@@ -64,8 +64,11 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin: 15px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
+    height: 450px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
     text-align: center;
@@ -79,8 +82,13 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.product p { 
-color: #0A0015;
+.product p {
+    color: #0A0015;
+    word-wrap: break-word;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-height: 100px; 
+    line-height: 1.4;
 }
 
 .buy-button {
