@@ -79,6 +79,14 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.product h3 {
+    color: lilac;
+}
+
+.product p {
+    color: dark purple;
+}
+
 .buy-button {
     background: #8a2be2;
     color: white;
