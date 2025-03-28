@@ -64,14 +64,14 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin: 15px;
-    display: inline-flex;
+    display: inline-block;
     flex-direction: column;
     width: 300px;
-    height: 480px; /* Altura fixa para os produtos */
+    height: 480px; 
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
     text-align: center;
-    justify-content: space-between; /* Distribui os elementos no espaço */
+    justify-content: space-between; 
 }
 
 .product img {
