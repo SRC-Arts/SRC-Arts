@@ -41,9 +41,20 @@
                         <option value="Fullbody NO background">Fullbody NO background $25.00 USD</option>
                         <option value="Fullbody Simple background">Fullbody Simple background $27.00 USD</option>
                         <option value="Fullbody Elaborate background">Fullbody Elaborate background $30.00 USD</option>
-                    </select>
-                </td>
-            </tr>
+                     </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="hidden" name="on1" value="Please, also send a descrition of what you&#39;d like "/>
+        Please, also send a descrition of what you&#39;d like 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="os1" maxLength="500" />
+      </td>
+    </tr>
         </table>
         <input type="hidden" name="currency_code" value="USD" />
          <input type="image" src="Buy_with_paypal_button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
@@ -76,8 +87,19 @@
           <option value="Waist up Elaboted background">
             Waist up Elaboted background $ 15,00 USD
           </option>
-        </select>
-                </td>
+         </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="hidden" name="on1" value="Please, also send a descrition of what you&#39;d like "/>
+        Please, also send a descrition of what you&#39;d like 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="os1" maxLength="500" />
+      </td>
     </tr>
   </table>
   <input type="hidden" name="currency_code" value="USD" />
@@ -89,9 +111,50 @@
                 <img src="Animated gif example.gif" alt="Animated gif">
                 <h3>Animated gif</h3>
                 <p>If you want looped, short animation, then this is your option.
-                It is also fully shaded, with a simple background</p>
-                <a href="YOUR_PAYPAL_LINK_HERE" class="buy-button" target="_blank">Buy with PayPal</a>
-            </div>
+                It is also fully shaded.</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="XH925ZAQCBJAG" />
+  <table>
+    <tr>
+      <td>
+        <input type="hidden" name="on0" value="How would you classify your animation"/>
+        How would you classify your animation?
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select name="os0">
+          <option value="Simply animated character Gif waist up, black/white Bg">
+            Simply animated character Gif waist up, black/white Bg
+          </option>
+          <option value="Simply animated character Gif waist up, elaborate Bg">
+            Simply animated character Gif waist up, elaborate Bg
+          </option>
+          <option value="Elaboratly animated character Gif waist up, black/white Bg">
+            Elaboratly animated character Gif waist up, black/white Bg
+          </option>
+          <option value="Elaborately animated character Gif waist up, elaborate Bg">
+            Elaborately animated character Gif waist up, elaborate Bg
+          </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="hidden" name="on1" value="Please, also send a descrition of what you&#39;d like "/>
+        Please, also send a descrition of what you&#39;d like 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="os1" maxLength="500" />
+      </td>
+    </tr>
+  </table>
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="image" src="Buy_with_paypal_button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+</form>
     </div></section>
 
     <section id="about" class="page">
