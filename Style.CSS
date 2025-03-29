@@ -10,7 +10,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    color: #19002C;  
+    color: #19002C;
+    font-weight: bold
 }
 
 header {
