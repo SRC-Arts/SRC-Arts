@@ -85,11 +85,13 @@ nav a:hover {
 .product h3 {
     color: white;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .product p {
     color: #E4C8F6;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .product form {
