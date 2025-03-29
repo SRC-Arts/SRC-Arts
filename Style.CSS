@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
     background-color: #1a0033; 
     background-image: url('https://raw.githubusercontent.com/SRC-Arts/SRC-Arts/main/Background%20website.gif');
     background-size: cover;
@@ -12,6 +11,7 @@ body {
     padding: 0;
     text-align: center;
     color: #19002C;
+    font-weight: bold;
 }
 
 header {
@@ -188,7 +188,7 @@ nav a:hover {
 }
 
 a {
-    color: #E4C8F6;
+    color: #752FA9;
     text-decoration: none;
 }
 
