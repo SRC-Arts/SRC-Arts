@@ -7,7 +7,7 @@ function showHome() {
 }
 
 function showInfo() {
-    console.log("Switching to About");
+    console.log("Switching to Portifolio");
     document.querySelector('.home-page').style.display = 'none';
     document.querySelector('.info-page').style.display = 'block';
     document.querySelector('.services-page').style.display = 'none';
@@ -29,3 +29,45 @@ function showContact() {
     document.querySelector('.services-page').style.display = 'none';
     document.querySelector('.contact-page').style.display = 'block';
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Filtro
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const artItems = document.querySelectorAll(".art-item");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.dataset.filter;
+
+            artItems.forEach(item => {
+                if (filter === "all" || item.dataset.category === filter) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+
+    // Pop-up
+    const modal = document.getElementById("popup-modal");
+    const modalImg = document.getElementById("popup-image");
+    const closePopup = document.getElementById("close-popup");
+
+    artItems.forEach(item => {
+        item.addEventListener("click", () => {
+            modalImg.src = item.querySelector("img").src;
+            modal.classList.remove("hidden");
+        });
+    });
+
+    closePopup.addEventListener("click", () => {
+        modal.classList.add("hidden");
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.add("hidden");
+        }
+    });
+});
