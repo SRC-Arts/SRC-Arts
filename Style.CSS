@@ -201,3 +201,39 @@ a:hover {
 .contact-page a {
     color: #E4C8F6;
 }
+
+#portfolio {
+    padding: 40px 20px;
+    background-color: #0A0015;
+    color: white;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #8a2be2;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
