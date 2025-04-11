@@ -172,14 +172,31 @@
     <div class="portfolio-gallery">
         <h2>Portifolio</h2>
         <p>Hello there, I'm Kebi, an amateur artist and animator. I began my journey in art a few years back and always felt like sharing it and the love for fanart, that's why this website exists.</p>
-        <div class="portfolio-gallery">
-    <div class="portfolio-item">
-      <img src="exemplo1.jpg" alt="Projeto 1">
-      <p>Fanart</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="exemplo2.jpg" alt="Projeto 2">
-      <p>Finished Commissions (2024)</p>
+
+<div id="portfolio-filters">
+  <button class="filter-button" data-filter="all">All</button>
+  <button class="filter-button" data-filter="digital">Digital Art</button>
+  <button class="filter-button" data-filter="animation">Animation</button>
+  <button class="filter-button" data-filter="sketch">Sketch</button>
+</div>
+
+<div id="portfolio-gallery">
+  <div class="art-item" data-category="digital">
+    <img src="arte1.png" alt="Digital Art 1">
+  </div>
+  <div class="art-item" data-category="animation">
+    <img src="gif_exemplo.gif" alt="Animation 1">
+  </div>
+  <div class="art-item" data-category="sketch">
+    <img src="sketch1.png" alt="Sketch 1">
+  </div>
+ 
+</div>
+<div id="popup-modal" class="hidden">
+  <span id="close-popup">&times;</span>
+  <img id="popup-image" src="" alt="Ampliada">
+</div>
+
     </div>
     </div> </section>
 
@@ -217,3 +234,4 @@
     </div> </section>
 </body>
 </html>
+      
