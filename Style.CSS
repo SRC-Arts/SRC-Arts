@@ -139,7 +139,7 @@ nav a:hover {
     margin: auto;
 }
 
-.service-page container
+.service-page container {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin: 15px;
@@ -151,7 +151,6 @@ nav a:hover {
 }
 
 .services-page img {
-    .services-page img {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
