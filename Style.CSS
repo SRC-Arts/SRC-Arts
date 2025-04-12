@@ -253,7 +253,7 @@ a:hover {
 }
 
 .art-item img:hover {
-    transform: scale(1.9);
+    transform: scale(2.0);
 }
 
 #popup-modal {
