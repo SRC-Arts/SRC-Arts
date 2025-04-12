@@ -221,10 +221,8 @@ a:hover {
 
 #portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+    grid-template-columns: repeat(autofill, 1fr ); 
     gap: 15px;
-    justify-items: center;
-}
 
 .art-item img {
     width: 100%;
@@ -232,10 +230,17 @@ a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
 }
 
 .art-item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.8);
 }
 
 #popup-modal {
