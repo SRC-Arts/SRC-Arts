@@ -7,7 +7,7 @@ function showHome() {
 }
 
 function showInfo() {
-    console.log("Switching to Portifolio");
+    console.log("Switching to Portfolio");
     document.querySelector('.home-page').style.display = 'none';
     document.querySelector('.info-page').style.display = 'block';
     document.querySelector('.services-page').style.display = 'none';
