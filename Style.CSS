@@ -201,7 +201,7 @@ a:hover {
     color: #E4C8F6;
 }
 
-.portfolio-filters {
+#portfolio-filters {
     margin-bottom: 20px;
 }
 
@@ -219,10 +219,17 @@ a:hover {
     background: #6a0dad;
 }
 
-#portfolio-gallery {
-    display: grid;
+.portfolio-gallery {
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
+}
+
+.portfolio-gallery image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
 }
 
 .art-item {
@@ -245,7 +252,6 @@ a:hover {
 
 .art-item img:hover {
     transform: scale(1.8);
-
 }
 
 #popup-modal {
