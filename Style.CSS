@@ -240,9 +240,8 @@ a:hover {
     width: 300px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
-    display: inline-block;
-    justify: center;
-}
+    display: grid;
+    }
 
 .art-item img {
     width: 100%;
