@@ -31,7 +31,7 @@ function showContact() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Filtro
+   
     const filterButtons = document.querySelectorAll(".filter-button");
     const artItems = document.querySelectorAll(".art-item");
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Pop-up
+   
     const modal = document.getElementById("popup-modal");
     const modalImg = document.getElementById("popup-image");
     const closePopup = document.getElementById("close-popup");
