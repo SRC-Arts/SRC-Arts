@@ -139,7 +139,7 @@ nav a:hover {
     margin: auto;
 }
 
-.services-page
+.services-page img {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin: 15px;
@@ -148,13 +148,6 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
     text-align: center;
-}
-
-.services-page img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin: 10px 0;
 }
 
 .contact-page form {
