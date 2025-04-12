@@ -221,11 +221,9 @@ a:hover {
 
 #portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr, minmax(200px, 1fr));
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
     gap: 15px;
     justify-items: center;
-}
-
 }
 
 .art-item img {
