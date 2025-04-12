@@ -247,7 +247,9 @@ a:hover {
     transform: scale(1.8);
 }
 
-.popup-modal {
+}
+
+#popup-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -260,17 +262,17 @@ a:hover {
     z-index: 999;
 }
 
-.popup-modal.hidden {
+#popup-modal.hidden {
     display: none;
 }
 
-.popup-modal img {
+#popup-modal img {
     max-width: 80%;
     max-height: 80%;
     border-radius: 10px;
 }
 
-.close-popup {
+#close-popup {
     position: absolute;
     top: 20px;
     right: 30px;
