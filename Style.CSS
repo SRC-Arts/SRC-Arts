@@ -57,15 +57,15 @@ nav a:hover {
     display: none;
 }
 
-target:not(#info) ~ #info {
+:target:not(#info) ~ #info {
     display: none;
 }
 
-target:not(#service) ~ #service {
+:target:not(#service) ~ #service {
     display: none;
 }
 
-target:not(#contact) ~ #contact {
+:target:not(#contact) ~ #contact {
     display: none;
 }
 
