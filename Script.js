@@ -76,14 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalImg = document.getElementById("popup-image");
     const closePopup = document.getElementById("close-popup");
 
-    artItems.forEach(item => {
+    artItems.forEach(item {
         item.addEventListener("click", () {
             modalImg.src = item.querySelector("img").src;
             modal.classList.remove("hidden");
         });
     });
 
-    closePopup.addEventListener("click", () => {
+    closePopup.addEventListener("click", () {
         modal.classList.add("hidden");
     });
 
