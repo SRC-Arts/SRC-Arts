@@ -3,7 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #1a0033; 
-    background-image: url('https://github.com/SRC-Arts/SRC-Arts/blob/main/novo%20bg%20do%20site.gif');
+    background-image: src:'novo bg do site.gif';
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
