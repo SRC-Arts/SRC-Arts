@@ -57,6 +57,18 @@ nav a:hover {
     display: none;
 }
 
+:target:not(#info) ~ #info {
+    display: none;
+}
+
+:target:not(#services) ~ #services {
+    display: none;
+}
+
+:target:not(#contact) ~ #contact {
+    display: none;
+}
+
 .container {
     padding: 40px;
 
