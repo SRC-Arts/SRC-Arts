@@ -30,8 +30,10 @@ function showContact() {
     document.querySelector('.contact-page').style.display = 'block';
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
-   
+document.addEventListener("DOMContentLoaded", function () {
+    
     const filterButtons = document.querySelectorAll(".filter-button");
     const artItems = document.querySelectorAll(".art-item");
 
