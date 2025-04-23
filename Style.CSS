@@ -3,14 +3,14 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #1a0033; 
-    background-image: background-image: url('https://github.com/SRC-Arts/SRC-Arts/blob/main/NovoBGdoSite.gif?raw=true');
+    background-image: url('https://github.com/SRC-Arts/SRC-Arts/blob/main/NovoBGdoSite.gif?raw=true');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
     padding: 0;
     text-align: center;
-    color: #19002C;
+    color: #C694E9;
     font-weight: bold;
 }
 
@@ -54,18 +54,6 @@ nav a:hover {
 }
 
 :target:not(#home) ~ #home {
-    display: none;
-}
-
-:target:not(#info) ~ #info {
-    display: none;
-}
-
-:target:not(#service) ~ #service {
-    display: none;
-}
-
-:target:not(#contact) ~ #contact {
     display: none;
 }
 
