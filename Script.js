@@ -1,15 +1,15 @@
 function showHome() {
     console.log("Switching to Home");
     document.querySelector('.home-page').style.display = 'block';
-    document.querySelector('.info-page').style.display = 'none';
+    document.querySelector('.portfolio-page').style.display = 'none';
     document.querySelector('.services-page').style.display = 'none';
     document.querySelector('.contact-page').style.display = 'none';
 }
 
-function showInfo() {
+function showPortfolio() {
     console.log("Switching to Portfolio");
     document.querySelector('.home-page').style.display = 'none';
-    document.querySelector('.info-page').style.display = 'block';
+    document.querySelector('.portfolio-page').style.display = 'block';
     document.querySelector('.services-page').style.display = 'none';
     document.querySelector('.contact-page').style.display = 'none';
 }
@@ -17,7 +17,7 @@ function showInfo() {
 function showService() {
     console.log("Switching to Services");
     document.querySelector('.home-page').style.display = 'none';
-    document.querySelector('.info-page').style.display = 'none';
+    document.querySelector('.portfolio-page').style.display = 'none';
     document.querySelector('.services-page').style.display = 'block';
     document.querySelector('.contact-page').style.display = 'none';
 }
@@ -25,15 +25,13 @@ function showService() {
 function showContact() {
     console.log("Switching to Contact");
     document.querySelector('.home-page').style.display = 'none';
-    document.querySelector('.info-page').style.display = 'none';
+    document.querySelector('.portfolio-page').style.display = 'none';
     document.querySelector('.services-page').style.display = 'none';
     document.querySelector('.contact-page').style.display = 'block';
 }
 
-
-document.addEventListener("DOMContentLoaded", () => {
-document.addEventListener("DOMContentLoaded", function () {
-    
+document.addEventListener("DOMContentLoaded", function () => {
+   
     const filterButtons = document.querySelectorAll(".filter-button");
     const artItems = document.querySelectorAll(".art-item");
 
@@ -46,11 +44,31 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.style.display = "block";
                 } else {
                     item.style.display = "none";
-                }
+                });
+
+            artItems.forEach(item => {
+                if (filter === "digital" || item.dataset.category === filter) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                });       
+            
+           artItems.forEach(item => {
+                if (filter === "traditional" || item.dataset.category === filter) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                });
+
+            artItems.forEach(item => {
+                if (filter === "animation" || item.dataset.category === filter) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                });
             });
         });
     });
-
    
     const modal = document.getElementById("popup-modal");
     const modalImg = document.getElementById("popup-image");
