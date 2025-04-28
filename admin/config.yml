@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: SRC-Arts/SRC-Arts.github.io
+  repo: src-arts.github.io/SRC-Arts/#adm
   branch: main
 
 media_folder: "images/uploads"
