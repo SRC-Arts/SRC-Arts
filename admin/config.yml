@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: SRC-Arts/SRC-Arts.github.io
+  repo: SRC-Arts/SRC-Arts.github.io/admin/
   branch: main
   client_id: 0v23lijjTSZNDAh2HeYH
   base_url: https://api.netlify.com
