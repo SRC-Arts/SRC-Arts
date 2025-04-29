@@ -2,11 +2,11 @@ backend:
   name: github
   repo: SRC-Arts/SRC-Arts.github.io
   branch: main
-  client_id: YOUR_CLIENT_ID
+  client_id: 0v23lijjTSZNDAh2HeYH
   base_url: https://api.netlify.com
   auth_endpoint: auth
 
-media_folder: "uploads" # where uploaded images will go
+media_folder: "uploads"
 public_folder: "/uploads"
 
 collections:
